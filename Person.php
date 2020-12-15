@@ -2,9 +2,9 @@
 
 class Person 
 {
-    var $firstName;
-    var $lastName;
-    var $age;
+    public $firstName;
+    public $lastName;
+    public $age;
 
     //méthode constructeur de la classe person, le constructeur d'une classe est appeler a chaque fois que l'on appelle un nouvelle objet de cette classe
     public function __construct($firstName, $lastName, $age)
@@ -36,12 +36,14 @@ class Person
 }
 //On effectue une instanciation quand on integre a une variable une class
 //Nous pouvons récuperer les argument d'une classe exemple celle de person
-$aziz = new Person('aziz', 'EL mADRAJ', "23");
+
+//TEST
+/*$aziz = new Person('aziz', 'EL mADRAJ', "23");
 $tato = new Person('tortoz', 'EL tizu', "25");
 
 $Complete_name = $aziz->fullName2();
 echo $Complete_name;
-
+*/
 //exo 9 méthodes
 /*
 $tato->fullName();
